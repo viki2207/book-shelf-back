@@ -11,7 +11,7 @@ res.setHeader("Access-Control-Allow-Credentials", true);
     res.send("API is running..");
 });
 app.use("/books", router); //localhost:5030/books
-mongoose.connect("mongodb+srv://root:root@cluster0.f8bifn6.mongodb.net/test").then(() => console.log("Connected to database"))
+mongoose.connect("mongodb+srv://root:root@cluster0.f8bifn6.mongodb.net/bookStore").then(() => console.log("Connected to database"))
   .then(() => {
     app.listen(5030);
   })
